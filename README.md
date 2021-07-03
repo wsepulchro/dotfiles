@@ -2,21 +2,25 @@
 
 Arquivos de configuração do meu desktop minimalista:
 
-Distribuição: Debian netinstall
+## Distribuição: Debian netinstall
 
-BSPWM
+- **BSPWM**
 
-Notificações: Dunst
+- Notificações: Dunst
 
-Polybar
+- Polybar
 
-Emulador de terminal: RXVT Unicode
+- Emulador de terminal: RXVT Unicode
 
-BASH
+- BASH
 
-Gerenciador de arquivos: Ranger
+- Gerenciador de arquivos: Ranger
 
-Navegador QuteBrowser
+- Navegador QuteBrowser
 
-vim
+- vim
+
+
+![Print do sistema](prints/printscreen_01.png)
+
 
