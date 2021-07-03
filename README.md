@@ -24,5 +24,5 @@ Arquivos de configuração do meu desktop minimalista:
 
 ![Print do sistema](prints/printscreen_01.png)
 ![navegador](prints/navegador.png)
-![Print do sistema](prints/dunst.png)
-![Print do sistema](prints/rofi.png)
+![Dunst](prints/dunst.png)
+![Rofi](prints/rofi.png)
