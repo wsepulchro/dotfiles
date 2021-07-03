@@ -21,6 +21,8 @@ Arquivos de configuração do meu desktop minimalista:
 - vim
 
 
-![Print do sistema](prints/printscreen_01.png)
 
+![Print do sistema](prints/printscreen_01.png)
+![navegador](prints/navegador.png)
+![Print do sistema](prints/dunst.png)
 
