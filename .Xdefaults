@@ -1,0 +1,114 @@
+! Extensions
+! ==========
+!
+! - matcher,selection-to-clipboard: for clicking on URLs
+! - font-size: for scaling fonts
+!   https://github.com/majutsushi/urxvt-font-size/blob/master/font-size
+!
+URxvt.perl-ext-common: default,matcher,selection-to-clipboard,font-size
+
+
+! Fonts
+! =====
+URxvt.font: xft: TerminessTTF Nerd Font:size=11
+URxvt.allow_bold: true
+
+
+! Scrolling
+! =========
+URxvt.saveLines: 10000
+URxvt.scrollBar: false
+URxvt.scrollstyle: rxvt
+
+! Scroll locking
+URxvt.scrollTtyOutput:      true
+URxvt.scrollWithBuffer:     true
+URxvt.scrollTtyKeypress:    true
+
+
+! Interaction
+! ===========
+
+! allow filepaths to select as one, otherwise delimit
+URxvt.cutchars: "\"(),<>[]{}|''"
+
+! For clickable urls (RMB), not an exact match to gnome-shell.
+URxvt.url-launcher: qutebrowser
+URxvt.matcher.button: 3
+
+
+! Key Bindings
+! ============
+
+! Restore Ctrl+Shift+(c|v)
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+! match vte/xterm
+URxvt.keysym.Control-Up:    3[1;5A
+URxvt.keysym.Control-Down:  3[1;5B
+URxvt.keysym.Control-Left:  3[1;5D
+URxvt.keysym.Control-Right: 3[1;5C
+
+! clear the scrollback
+urxvt.keysym.Control-l: clear\n
+
+! scale fonts
+URxvt.keysym.C-S-plus: font-size:increase
+URxvt.keysym.C-KP_Add: font-size:increase
+URxvt.keysym.C-S-underscore: font-size:decrease
+URxvt.keysym.C-KP_Subtract: font-size:decrease
+URxvt.keysym.C-0: font-size:reset
+URxvt.keysym.C-KP_0: font-size:reset
+
+
+! Theme/Colors
+! ============
+
+URxvt.fading: 0
+
+URxvt.cursorColor: #d40000
+URxvt.cursorBlink: 1
+URxvt.cursorBlock: 1
+
+! tranparency
+URxvt*.transparent: true
+URxvt*.shading: 20
+
+URxvt.background: black
+URxvt.foreground: #FFFFFF
+
+!! Tango Colors
+!
+!! black dark/light
+URxvt.color0: #171A1B
+URxvt.color8: #555753
+
+!! red dark/light
+URxvt.color1: #CC0000
+URxvt.color9: #FF0000
+
+!! green dark/light
+URxvt.color2: #00DD00
+URxvt.color10: #00FF00
+
+!! yellow dark/light
+URxvt.color3: #DDDD00
+URxvt.color11: #FFFF00
+
+!! blue dark/light
+URxvt.color4: #d40000
+URxvt.color12: #AAAAFF
+
+!! magenta dark/light
+URxvt.color5: #75507B
+URxvt.color13: #d40000
+
+!! cyan dark/light
+URxvt.color6: #06989A
+URxvt.color14: #34E2E2
+
+!! white dark/light
+URxvt.color7: #D3D7CF

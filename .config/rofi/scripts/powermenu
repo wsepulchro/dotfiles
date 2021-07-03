@@ -1,0 +1,26 @@
+ #!/usr/bin/env bash
+
+
+# icones
+desligar=""
+reiniciar=""
+bloquear=""
+sair=""
+
+theme="$HOME/.config/rofi/themes/powermenu.rasi"
+janela="-theme $theme -columns 4 -location 0"
+MENU="$(rofi -sep "|" -dmenu -i -p '' $janela -hide-scrollbar -font "FontAwesome 35" <<< "$bloquear|$sair|$reiniciar|$desligar")"
+
+case "$menu" in
+  	$bloquear)
+		i3lock
+  		;;
+  	$sair)
+		bspc quit
+  		;;
+  	$reiniciar) 
+		sudo shutdown -r now
+  		;;
+  	$desligar)
+		sudo shutdown -p now
+esac

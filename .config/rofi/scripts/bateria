@@ -1,0 +1,15 @@
+#!/bin/bash
+
+STATUS=$(cat /sys/class/power_supply/BAT0/status)
+CAPACITY=$(cat /sys/class/power_supply/BAT0/capacity)
+#ICON=battery-level-0-charging-symbolic.symbolic.png
+
+#lança uma notificação se a bateria estiver "Descarregando " e com 15% ou menos...
+if [[ "$STATUS" -eq "Discharging" || "$CAPACITY" -lt "15" ]]; then
+	dunstify "Bateria" "Bateria fraca! $CAPACITY%"
+
+fi
+
+if [[ "$STATUS" -eq "Charging" || "$CAPACITY" -eq "100" ]]; then
+	dustify "Bateria" "Bateria Carregada!"
+fi

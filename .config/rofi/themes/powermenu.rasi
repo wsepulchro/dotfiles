@@ -1,0 +1,53 @@
+/*
+ *
+ * Autor:            Wanderson Sepulchro
+ * Email:            wsepulchro@gmail.com
+ * Github:           @wsepulchro
+ *
+ *
+ */
+
+
+* {
+  background-color: #000000;
+  border-color:     #000000;
+  text-color:       #FFFFFF;
+  spacing:          0;
+  height:           30%;
+}
+
+inputbar {
+  border:           0 0 1px 0;
+  children:         [prompt,entry];
+}
+
+prompt {
+  padding:          16px;
+  border:           0 1px 0 0;
+}
+
+textbox {
+  background-color: #d40000;
+  border:           0 0 1px 0;
+  border-color:     #282C33;
+  padding:          8px 16px;
+}
+
+entry {
+  padding:          16px;
+}
+
+listview {
+  cycle:            false;
+  margin:           0 0 -1px 0;
+  scrollbar:        false;
+}
+
+element {
+  border:           0 0 1px 0;
+  padding:          16px;
+}
+
+element selected {
+  background-color: #161616;
+}
