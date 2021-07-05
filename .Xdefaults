@@ -11,8 +11,9 @@ URxvt.perl-ext-common: default,matcher,selection-to-clipboard,font-size
 ! Fonts
 ! =====
 URxvt.font: xft: TerminessTTF Nerd Font:size=11
-URxvt.allow_bold: true
+            xft: FontAwesome:size=10
 
+URxvt.allow_bold: true
 
 ! Scrolling
 ! =========
@@ -75,7 +76,7 @@ URxvt.cursorBlock: 1
 
 ! tranparency
 URxvt*.transparent: true
-URxvt*.shading: 20
+URxvt*.shading: 15
 
 URxvt.background: black
 URxvt.foreground: #FFFFFF

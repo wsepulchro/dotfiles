@@ -13,7 +13,7 @@ export MANPAGER="less" # Set less as $MANPAGER
 export PATH=$PATH:$HOME/.local/bin
 
 ### VARIAVEIS ###
-	PS1="┌─[\[\033[0;31m \u \[\033[0m\]]─[\[\033[0;31m \w \[\033[0m\]]\n└─➤ \$ "
+	PS1="┌─[\[\033[0;31m \u \[\033[0m\]]─[\[\033[0;31m \w \[\033[0m\]]\n└─ ➤ \$ "
 
 ### SET MODO VI NO SHELL ###
 set -o vi
