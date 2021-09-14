@@ -25,7 +25,13 @@ bind -m vi-insert 'Control-l: clear-screen'
 [[ $- != *i* ]] && return
 
 ### MUDA O TITULO DO TERMINAL NA BARRA  ###
-PROMPT_COMMAND="echo -ne \"\033]0;${PWD##*/}\007\"; $PROMPT_COMMAND"
+ase "$TERM" in
+xterm*|rxvt*)
+    PS1="\[\e]0;${debian_chroot:+($debian_chroot)} \w\a\]$PS1"
+    ;;
+*)
+    ;;
+esac
 
 ### ALIASES ###
 
@@ -42,12 +48,6 @@ alias att="sudo apt update -y && sudo apt upgrade -y && sudo apt full-upgrade &&
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
-
-# Mais alguns alias para evitar erros
-alias rm='rm -i'
-alias cp='cp -i'
-alias mv='mv -i'
-alias clear='printf "\e[H\e[2J"'
 
 ### Bash Auto-Complation
 source /usr/share/bash-completion/bash_completion
